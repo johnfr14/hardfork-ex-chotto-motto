@@ -11,53 +11,82 @@ La référence de la couleur jaune - #fee500
 /* changer la police pour Changa, laisser le sans-serif comme le 2e choix */
 /* augmente la taille de police au 20px, l'interligne de 1.8 */
 body {
+  margin: 0;
+  border: 1.5rem solid #fee500;
+  font-family: 'Changa', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  text-align: center;
+
 }
 
 /* le block contenu est centré ne dépasse pas la largeur de 720px */
 main {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* les images ne dépassent pas l'écran */
 img {
+  max-width: 100%;
+  height: auto;
+}
+main > img {
+  box-shadow: 10px 10px 0 #fee500;
 }
 /* centrer les éléments de la partie header */
 header {
+  padding-top: 2rem;
+  margin: auto;
+  text-align: center;
 }
 
-/* titre h2 centré */
-h2 {
+
+h1 {
+  font-weight: bold;
 }
 
 /* les éléments dans le footer centrée */
 footer {
+  text-align: center;
 }
 
 /* taille de police plus grande (32px) dans le paragraphe intro, centré */
 .intro {
+  font-size: 2rem;
+  text-align: center;
 }
 
-/* titre h2 centré */
-h2 {
-}
-
-/* les éléments dans le footer centrée */
-footer {
-}
 
 /* la liste sans bullets */
 /* pas de marge ni de padding */
 nav ul {
+  list-style-type: none;
+  margin: none;
+  padding: none;
 }
 
 /* les éléments de la liste affichés dans une ligne */
 nav li {
+  display: inline-block;
 }
 
+a {
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
 /* les liens dans la partie navigation en majuscules, couleur noir */
 /* espacés de 12px */
 nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fee500;
+  color: black;
+  letter-spacing: 0.75rem;
 }
 
 /* le lien dans la partie navigation en survol devient jaune  */
 nav a:hover {
+  background-color: black;
+  color: #fff;
 }
